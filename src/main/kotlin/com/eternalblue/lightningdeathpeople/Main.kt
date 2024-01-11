@@ -7,6 +7,7 @@ class Main : JavaPlugin()
     {
         logger.info("玩家死亡触发闪电插件已启用")
         server.pluginManager.registerEvents(DeathListener(),this)
+        server.pluginManager.registerEvents(JoinListener(this),this)
     }
 
     override fun onDisable()
